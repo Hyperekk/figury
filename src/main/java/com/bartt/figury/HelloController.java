@@ -36,8 +36,8 @@ public class HelloController {
         Double c;
         Double b;
         try {
-            c = Double.parseDouble(txt1.getText());
-            b = Double.parseDouble(txt1.getText());
+            c = Double.parseDouble(txt2.getText());
+            b = Double.parseDouble(txt3.getText());
 
         } catch (Exception exception) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -46,22 +46,79 @@ public class HelloController {
             alert.showAndWait();
             return;
         }
-        Double kwadrat = c*b;
+        Double prostokat = c*b;
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Wynik");
+        alert.setHeaderText(""+prostokat);
     }
 
     public void countRob(ActionEvent actionEvent)
     {
+        Double d;
+        Double e;
+        try {
+            d = Double.parseDouble(txt4.getText());
+            e = Double.parseDouble(txt5.getText());
 
+        } catch (Exception exception) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText("Wpisz poprawne liczby");
+            alert.showAndWait();
+            return;
+        }
+        Double romb = e*d;
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Wynik");
+        alert.setHeaderText(""+romb);
     }
 
     public void countRo(ActionEvent actionEvent)
     {
+        Double f;
+        Double g;
+        try {
+            f = Double.parseDouble(txt9.getText());
+            g = Double.parseDouble(txt10.getText());
 
+        } catch (Exception exception) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText("Wpisz poprawne liczby");
+            alert.showAndWait();
+            return;
+        }
+        Double rownolegloboku = f*g;
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Wynik");
+        alert.setHeaderText(""+rownolegloboku);
     }
 
     public void countTr(ActionEvent actionEvent)
     {
+        Double h;
+        Double i;
+        Double j;
+        try {
+            h = Double.parseDouble(txt6.getText());
+            i = Double.parseDouble(txt7.getText());
+            j = Double.parseDouble(txt8.getText());
 
+        } catch (Exception exception) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText("Wpisz poprawne liczby");
+            alert.showAndWait();
+            return;
+        }
+        Double trapez = ((h+i)*j)/2;
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Wynik");
+        alert.setHeaderText(""+trapez);
     }
 
     public void countKt(ActionEvent actionEvent)
@@ -78,6 +135,11 @@ public class HelloController {
             return;
         }
         Double kwadrat = a*a;
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Wynik");
+        alert.setHeaderText(""+kwadrat);
+
 
     }
 }
