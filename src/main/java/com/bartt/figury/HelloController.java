@@ -47,10 +47,12 @@ public class HelloController {
             return;
         }
         Double prostokat = c*b;
+        Double prostokat1 = 2*c+2*b;
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Wynik");
-        alert.setHeaderText(""+prostokat);
+        alert.setHeaderText("Pole to:"+prostokat + "\nObwód to:"+prostokat1);
+        alert.showAndWait();
     }
 
     public void countRob(ActionEvent actionEvent)
@@ -69,10 +71,12 @@ public class HelloController {
             return;
         }
         Double romb = e*d;
+        Double romb1 = 4*d;
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Wynik");
-        alert.setHeaderText(""+romb);
+        alert.setHeaderText("Pole to:"+romb + "\nObwód to:"+romb1);
+        alert.showAndWait();
     }
 
     public void countRo(ActionEvent actionEvent)
@@ -94,7 +98,8 @@ public class HelloController {
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Wynik");
-        alert.setHeaderText(""+rownolegloboku);
+        alert.setHeaderText("Pole to:"+rownolegloboku);
+        alert.showAndWait();
     }
 
     public void countTr(ActionEvent actionEvent)
@@ -118,7 +123,8 @@ public class HelloController {
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Wynik");
-        alert.setHeaderText(""+trapez);
+        alert.setHeaderText("Pole to:"+trapez );
+        alert.showAndWait();
     }
 
     public void countKt(ActionEvent actionEvent)
@@ -135,11 +141,11 @@ public class HelloController {
             return;
         }
         Double kwadrat = a*a;
+        Double kwadrat1 = 4*a;
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Wynik");
-        alert.setHeaderText(""+kwadrat);
-
-
+        alert.setHeaderText("Pole to:"+kwadrat + "\nObwód to:"+kwadrat1);
+        alert.showAndWait();
     }
 }
